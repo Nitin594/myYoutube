@@ -1,0 +1,1 @@
+I'm going to create a platform similar to youtube.
