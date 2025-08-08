@@ -10,7 +10,10 @@ const connectDB = async () => {
         }`)
     } catch (error) {
         console.log("MONGODB connection error", error);
-        process.exit(1)
+        process.exit(1) //node js command to immediately terminate the entire application
     }
 }
 export default connectDB
+
+
+//try / catch is standard error handling in js

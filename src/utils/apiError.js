@@ -1,9 +1,9 @@
-class ApiError extends Error{
+class ApiError extends Error{                   //class is a blueprint for creating objects
     constructor(
         statusCode,
         message="Something went wrong",
         errors = [],
-        statck = ""
+        stack = ""
 
     ){
         super(message)
