@@ -9,7 +9,8 @@ const userSchema = new Schema (
         unique:true,
         lowercase:true,
         trim:true,
-        index:trusted},
+        index:true
+    },
     email: {
         type:String,
         required:true,
@@ -17,13 +18,13 @@ const userSchema = new Schema (
         lowercase:true,
         trim:true
     },
-    fullname: {
+    fullName: {
         type:String,
         required:true,
         unique:true,
         lowercase:true,
         trim:true,
-        index:trusted
+        index:true
     },
     avatar:{
         type:String, //cloudinary url
