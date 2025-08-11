@@ -7,15 +7,9 @@ const router = Router()
 
 router.post("/register", 
     upload.fields([
-        {
-            name:"avatar",
-            maxCount:1
-        },
-        {
-            name:"coverImage",
-            maxCount:1
-        }
-    ]),
+  { name: "avatar", maxCount: 1 },
+  { name: "coverImage", maxCount: 1 }
+]),
     registerUser);
 // filepath: d:\myYoutube\src\routes\user.routes.js
 router.get("/test", (req, res) => res.send("Test route working"));
