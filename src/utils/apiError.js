@@ -4,7 +4,6 @@ class ApiError extends Error{                   //class is a blueprint for creat
         message="Something went wrong",
         errors = [],
         stack = ""
-
     ){
         super(message)
         this.statusCode = statusCode
@@ -14,7 +13,7 @@ class ApiError extends Error{                   //class is a blueprint for creat
         this.errors = errors
 
         if(stack){
-            this.stack = stack
+            this.stack = stack      //stack trace is the list of events that occured before the error
         }else{
             Error.captureStackTrace(
                 this, this.constructor

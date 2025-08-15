@@ -21,10 +21,10 @@ const userSchema = new Schema (
     fullName: {
         type:String,
         required:true,
-        //unique:true,
+        unique:false,
         lowercase:true,
         trim:true,
-        index:true
+        //index:true
     },
     avatar:{
         type:String, //cloudinary url
